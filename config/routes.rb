@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :users
-  resources :habits do
-    resources :habit_events, only: [ :index ]
+  resources :habits 
   end
   resources :checkins, only: [ :create ]
 
